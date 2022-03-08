@@ -1,0 +1,9 @@
+{
+  "name": "deathcounter",
+  "description": "Death Counter Node.js app.",
+  "author": "Helrayzer <https://twitch.tv/helrayzr>",
+  "dependencies": {
+    "express": "4.x"
+  },
+  "engine": "node >= 0.10.6"
+}
