@@ -9,11 +9,15 @@
     <script src="/script.js"></script>
 </head>
 <body>
-	<div class="title font-effect-fire"><span>COUNTER_TITLE</span></div>
-	<div class="count font-effect-fire-animation"><span>COUNT</span></div>
-	
-	<div class="nottitle font-effect-fire"><span>It has been</span></div>
-	<ul id="order-list" class="order-list font-effect-fire-animation"></ul>
-	<div style="line-height:1" class="nottitle font-effect-fire"><span>Minutes since</br>your last death.</span></div>
+	<div class="row">
+		<div class="column left font-effect-fire"><span>Total Deaths:</span></div>
+		<div class="column title center font-effect-fire"><span>COUNTER_TITLE</span></div>
+		<div class="column right font-effect-fire"><span>Last Death (mins):</span></div>
+	</div>
+	<div class="row">
+		<div class="column left font-effect-fire"><ul id="gamecount" class="order-list"></ul></div>
+		<div class="column center font-effect-fire"><span style="visibility:hidden;">hidden</span></div>
+		<div class="column right font-effect-fire"><ul id="order-list" class="order-list font-effect-fire"></ul></div>
+	</div>
     <script src="/rollNumbers.js"></script>	
 </body>

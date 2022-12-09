@@ -1,14 +1,21 @@
 // Death Counter WIP
 let count = 0;
 let refresh_delay = 1000;
+let countertitle = "";
 
 function load_config() {
   $.get(window.location.href + "config", function(data) {
     // Set the title.
     $(".title span").text(data.counter_title);
+	countertitle = data.counter_title;
+	//console.log(countertitle);
+  });
+	
+  $.get(window.location.href + "current", function(data) {
 	// Set the count.
-	$(".count span").text(data.count);
-    // Set up the item list.
+	count = data;
+	//console.log(count);
+	//$("span#gamecount").text(data);
   });
 }
 
@@ -17,7 +24,14 @@ function update_count() {
     // If the current step is changed, update list.
     if (data !== count) {
 		count = data;
-		$(".count span").text(count);
+		//$(".count span").text(count);
+	}
+  });
+  $.get(window.location.href + "title", function(data) {
+    // If the current step is changed, update list.
+    if (data !== countertitle) {
+		countertitle = data;
+		$(".title span").text(countertitle);
 	}
   });
 }
