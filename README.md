@@ -12,13 +12,9 @@ The Stream Deaths animation was generated via CodePen ([link](https://codepen.io
 
 Here are the components to this project:
 
-  1. 2 HTML files (`index.html` and `streamdeaths.html`)
-    1. `index.html` lays out a stream title, a current death count, and the number of minutes since the death count changed.
-	1. `streamdeaths.html` displays the per-stream death count center screen as a 3D rotating dial.
+  1. 2 HTML files (`index.html` and `streamdeaths.html`). `index.html` lays out a stream title, a current death count, and the number of minutes since the death count changed. `streamdeaths.html` displays the per-stream death count center screen as a 3D rotating dial.
   1. A Node.js HTTP server (`server.js`), which serves the HTML file to OBS, and allows you to control the incrementing and decrementing of the count.
-  1. 2 config files (`config.json` and `counts.json`)
-    1. `config.json` holds the settings for localhost port, title, and starting count for the stream.
-	1. `counts.json` holds the persistent death count for each game.
+  1. 2 config files (`config.json` and `counts.json`) `config.json` holds the settings for localhost port, title, and starting count for the stream. `counts.json` holds the persistent death count for each game.
   
 ## Customizing the overlay
 
